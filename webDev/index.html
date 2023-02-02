@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+
+
+    <section>
+        <img src="tiger1.png" id="tiger" alt="Error">
+        <h2 id="text"><span>Welcome To The</span><br>JUNGLE</h2>
+
+        <img src="bird1.png" id="bird1" alt="Error">
+        <img src="bird2.png" id="bird2" alt="Error">
+        <img src="forest.png" id="forest" alt="Error">
+
+        <img src="rocks.png" id="rocks" alt="Error">
+        <img src="water.png" id="water" alt="Error">
+        <a href="#wild" id="btn">Explore</a>
+        <img src="elep.png" id="elep" alt="Error">
+        <img src="aqua.jpg" id="aqua" alt="Error">
+        <img src="cute.jpg" id="cute" alt="Error">
+        <img src="deer.jpg" id="deer" alt="Error">
+        <img src="zebra.jpg" id="zebra" alt="Error">
+
+
+    </section>
+
+    <div class="n1">
+        <h1 id="wild">Wildlife</h1>
+        <p>Wildlife refers to undomesticated animal species, but has come to include all organisms that grow or live
+            wild in an area without being introduced by humans. Wildlife was also synonymous to game: those birds and
+            mammals that were hunted for sport. Wildlife can be found in all ecosystems. Deserts, plains, grasslands,
+            woodlands, forests, and other areas, including the most developed urban areas, all have distinct forms of
+            wildlife. While the term in popular culture usually refers to animals that are untouched by human factors,
+            most scientists agree that much wildlife is affected by human activities.Some wildlife threaten human
+            safety, health, property, and quality of life. However, many wild animals, even the dangerous ones, have
+            value to human beings. This value might be economic, educational, or emotional in nature.
+
+            Humans have historically tended to separate civilization from wildlife in a number of ways, including the
+            legal, social, and moral senses. Some animals, however, have adapted to suburban environments. This includes
+            such animals as feral cats, dogs, mice, and rats. Some religions declare certain animals to be sacred, and
+            in modern times, concern for the natural environment has provoked activists to protest against the
+            exploitation of wildlife for human benefit or entertainment.
+
+            Global wildlife populations have decreased by 68% since 1970 as a result of human activity, particularly
+            overconsumption, population growth, and intensive farming, according to a 2020 World Wildlife Fund's Living
+            Planet Report and the Zoological Society of London's Living Planet Index measure, which is further evidence
+            that humans have unleashed a sixth mass extinction event. According to CITES, it has been estimated
+            that annually the international wildlife trade amounts to billions of dollars and it affects hundreds of
+            millions of animal and plant specimen
+        </p>
+    </div>
+    <div class="sec">
+        <h2 class="land">Land For Wildlife</h2>
+        <p>Terrestrial animals are animals that live predominantly or entirely on land (e.g. cats, dogs, ants, spiders),
+            as compared with aquatic animals, which live predominantly or entirely in the water (e.g. fish, lobsters,
+            octopuses), and amphibians, which rely on a combination of aquatic and terrestrial habitats (e.g. frogs and
+            newts). Some groups of insects are terrestrial, such as ants, butterflies, earwigs, cockroaches,
+            grasshoppers and many others, while other groups are partially aquatic, such as mosquitoes and dragonflies,
+            which pass their larval stages in water. Terrestrial animals tend to be more developed and intelligent than
+            aquatic animals.Humans have historically tended to separate civilization from wildlife in a number of ways,
+            including the legal, social, and moral senses. Some animals, however, have adapted to suburban environments.
+            This includes such animals as feral cats, dogs, mice, and rats. Some religions declare certain animals to be
+            sacred, and in modern times, concern for the natural environment has provoked activists to protest against
+            the exploitation of wildlife for human benefit or entertainment.</p>
+    </div>
+
+    <div class="sec2">
+        <h3 class="waterlife">Water Life</h3>
+        <p>Water animals are generally fish and insect species. Some fish live in fresh water, while others live in salt
+            water. In addition, some crab and turtle species also live in the water. There are some birds that use the
+            sea to hunt among the aquatic animals. Although other aquatic creatures are also found, fish use most of the
+            water. Some mammals also live in the water. Seal and whale are at the head of these animals.
+            <br>Fresh water creates a hypotonic environment for aquatic organisms. This is problematic for some
+            organisms with pervious skins or with gill membranes, whose cell membranes may burst if excess water is not
+            excreted. Some protists accomplish this using contractile vacuoles, while freshwater fish excrete excess
+            water via the kidney.Although most aquatic organisms have a limited ability to regulate their osmotic
+            balance and therefore can only live within a narrow range of salinity, diadromous fish have the ability to
+            migrate between fresh water and saline water bodies. During these migrations they undergo changes to adapt
+            to the surroundings of the changed salinities; these processes are hormonally controlled. The European eel
+            (Anguilla anguilla) uses the hormone prolactin, while in salmon (Salmo salar) the hormone cortisol plays a
+            key role during this process.
+            <br> <i>Importance for Environment : </i>Aquatic animals play an important role for the environment as well
+            as
+            human's daily usage. The importance of aquatic animals comes from the fact that they are organisms that
+            provide humans with sources such as food, medicine, energy shelter, and raw materials that are used for
+            daily life.
+
+            Each aquatic species plays a different role to help us make every day easier, healthier, and also more
+            productive. They also help with the atmospheric pressure and global climate change.
+        </p>
+    </div>
+
+
+
+    <script>
+        let text = document.getElementById('text')
+        let bird1 = document.getElementById('bird1')
+        let bird2 = document.getElementById('bird2')
+        let btn = document.getElementById('btn')
+        let forest = document.getElementById('forest')
+        let water = document.getElementById('water')
+        let rocks = document.getElementById('rocks')
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + '%';
+            bird1.style.left = value * 2 + '%';
+            bird2.style.top = value * -1.5 + '%';
+            bird2.style.left = value * -5 + '%';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+
+        })
+    </script>
+    <div class="footer">
+        <p>All rights reserved &copy; Md Adnan Jawed</p>
+    </div>
+</body>
+
+</html>
